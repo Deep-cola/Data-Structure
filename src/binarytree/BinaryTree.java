@@ -258,7 +258,7 @@ public class BinaryTree {
                 //cur 置空去取当前结点的父结点继续判断
                 cur = null;
             }else {
-                // 没有的话，遍历右孩子
+                // 没有打印的话，遍历右孩子
                 cur = cur.right;
             }
         }

@@ -58,9 +58,9 @@ public class MyQueue {
         if (this.head.next == null) {
             this.head = null;
             this.tail = null;
-            return oldHead.val;
+        }else {
+            this.head = this.head.next;
         }
-        this.head = this.head.next;
         return oldHead.val;
 
     }

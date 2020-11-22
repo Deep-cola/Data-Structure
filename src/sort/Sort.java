@@ -226,7 +226,7 @@ public class Sort {
         // begin == end 时栈满溢出, 所以需要判断掉
         if (begin >= end) return;
         int prior = partition(array, begin, end);
-        quick(array, 0, prior - 1);
+        quick(array, begin, prior - 1);
         quick(array, prior + 1, end);
     }
 
@@ -263,9 +263,9 @@ public class Sort {
     /**
      * 归并排序:
      * 时间复杂度:
-     *      最好情况 -> O(logN),
-     *      最差情况 -> O(logN),
-     *      平均情况 -> O(logN)
+     *      最好情况 -> O(N*logN),
+     *      最差情况 -> O(N*logN),
+     *      平均情况 -> O(N*logN)
      * 空间复杂度: O(N)
      * 稳定性：稳定
      */

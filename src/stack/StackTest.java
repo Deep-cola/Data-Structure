@@ -1,7 +1,5 @@
 package stack;
 
-import binarytree.BinaryTree;
-
 import java.util.Stack;
 
 /**

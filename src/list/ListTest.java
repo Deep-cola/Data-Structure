@@ -48,7 +48,7 @@ public class ListTest {
      *          返回元素 o 最后一次出现的下标, 如果没有这个元素就返回 -1
      * 11.List<E> subList(int fromIndex, int toIndex)
      *          Returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.
-     *          截取一部分 list,返回在 fromIndex - toIndex 之间的 list 元素
+     *          截取一部分 list,返回在 fromIndex - toIndex 之间的 list 元素(左闭右开)
      * 12.void clear()
      *          Removes all of the elements from this list (optional operation).
      *          删除 list 中的所有元素
@@ -90,6 +90,9 @@ public class ListTest {
         System.out.println(list.remove(0));// 武者
         System.out.println(list.remove("武者"));// false
         System.out.println(list);// [及时雨, 智多星, 黑旋风, 豹子头, 浪里白条, 拼命三郎]
+
+        // 截取一部分list
+        System.out.println(list.subList(1, 3));// [智多星, 黑旋风]
 
         // 清空 list
         list.clear();

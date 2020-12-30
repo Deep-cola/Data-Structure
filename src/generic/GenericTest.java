@@ -9,10 +9,6 @@ import java.util.ArrayList;
  */
 public class GenericTest<T> {
 
-    public <T> void show(GenericTest<E> key) {
-
-    }
-
     public static void main(String[] args) {
         ArrayList<Integer> intArray = new ArrayList<>();
         ArrayList<String> strArray = new ArrayList<>();
